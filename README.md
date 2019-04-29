@@ -1,4 +1,33 @@
 # CS1410 Project
+
+To complete the code first read through all the classes/UML to try and understand what each class is for
+All of the parts that say // TODO are parts that need to be completed
+Completed classes - Location, Direction
+We might still need to create new classes so if you think there needs to be one create it
+Whatever you work on add your name to the comments at the top
+Upload classes to https://drive.google.com/drive/folders/13Dja_yqe9oeNYAFglPW1xA3o04b4pr_X?usp=sharing
+
+* Complete the Action enum - needs all of the different actions like forward/rotate, example on https://vle.aston.ac.uk/bbcswebdav/pid-1526778-dt-content-rid-9991493_1/courses/2018_CS1410/tutorial3-design.pdf
+(outline already done, could be changed)
+* Complete the robot class
+  - Constructor should have parameters for the player and assign it to 
+  - act(Action a) should use the Action enum to perform an action on the robot - only do this if Action enum is finished
+  it should check what type of action
+  - destroy() should put the robot back at the starting location, which could be a variable
+  - push should have a parameter of type Direction and it should move the robot using the Action enum and the Direction
+  - Add a method called setLocation which takes x (int) and y (int) as parameters which makes a new Location using the parameters
+  -
+
+
+
+
+
+
+
+
+
+
+
  The ​task​ is to ​implement​ a ​grid-based board game​, where you ​race ​with your ​robot​ to ​touch all the ​flags​ on the ​board​ in order (first ​player​ to do that ​wins​). It is essentially a heavily simplified version of ​Robo Rally​, from​ Wizards of the Coast​: ​look ​it up if it ​sounds ​interesting!  
  The ​robots​ ​start ​on​ predetermined positions​ on the ​board​ ​facing ​north, and a ​player​ ​gets ​the first ​player marker​. Each ​round​ consists of these ​steps​:  1. The ​players​ ​program ​their ​robots​ with a sequence of 5 different ​actions​. These can be “​move Forward​ one ​space​” (F), “​Back up​ one ​space​” (B), “​rotate​ 90 degrees Left” (L), “​rotate 90 degrees Right” (R), “​do a U-turn​” (U), or “​Wait​” (W).  You ​may not repeat ​an ​action​ twice in a row: “FFLWF” is not valid, but “FWFLF” would be valid. It would be boring and unfair if everyone simply ​played ​“FFFFF” all the time!  2. Robots will ​operate ​in ​player order​, ​executing ​the ​action​ in the first ​slot​, then the ​locations where the ​robots ​are will ​activate​, and the first​ player token​ ​passes ​to the next ​player​. This is repeated ​with the second, third, fourth and fifth ​slots​.  
  As an example, with player A and player B having decided on “FLFWF” and “WFWFL”, and with A starting with the first player token, this will happen:  (a) A “F” is executed, then B “W”. Board activates. First player token passes to B.  (b) B “F” is executed, then A “L”. Board activates. First player token passes to A.  (c) A “F” is executed, then B “W”. Board activates. First player token passes to B.  (d) B “F” is executed, then A “W”. Board activates. First player token passes to A.  (e) A “F” is executed, then B “F”. Board activates. First player token passes to B.  
