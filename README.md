@@ -13,9 +13,15 @@ Upload classes to https://drive.google.com/drive/folders/13Dja_yqe9oeNYAFglPW1xA
   - act(Action a) should use the Action enum to perform an action on the robot - only do this if Action enum is finished
   it should check what type of action
   - destroy() should put the robot back at the starting location, which could be a variable
-  - push should have a parameter of type Direction and it should move the robot using the Action enum and the Direction
+  - (difficult)push should have a parameter of type Direction and it should move the robot using the Action enum and the Direction
   - Add a method called setLocation which takes x (int) and y (int) as parameters which makes a new Location using the parameters
-  -
+* Complete Player class
+  - add an ArrayList called ActionList which has type Action
+  - add a line to the Constructor for initialising the ArrayList
+  - add a method called addAction which has parameter of type Action, which adds the action to the ArrayList
+  - (difficult) make a method to check if there two actions in a row in the array
+ * Complete Flag class
+  - (difficult) notifyGame() should tell the game that one of the flags has been touched and by what player, maybe using player
 
 
 
