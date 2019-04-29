@@ -23,7 +23,7 @@ Try and comment using javadoc style: https://vle.aston.ac.uk/bbcswebdav/pid-1477
   - add a method called addAction which has parameter of type Action, which adds the action to the ArrayList
   - (difficult) make a method to check if there two actions in a row in the array
  * Complete Flag class
-  - (difficult) notifyGame() should tell the game that one of the flags has been touched and by what player, maybe using player/robot/game as a parameter
+   - (difficult) notifyGame() should tell the game that one of the flags has been touched and by what player, maybe using player/robot/game as a parameter
   - react should use the notifyGame() method and give the Robot in it as a parameter
  * Complete Gear class
   - react should rotate the robot using r.act(LEFT) or r.act(RIGHT) which could happen randomly (possibly using the Random class) 
