@@ -9,8 +9,7 @@ Upload classes to https://drive.google.com/drive/folders/13Dja_yqe9oeNYAFglPW1xA
 
 * Complete the Action enum - needs all of the different actions like forward/rotate, example on https://vle.aston.ac.uk/bbcswebdav/pid-1526778-dt-content-rid-9991493_1/courses/2018_CS1410/tutorial3-design.pdf
 (outline already done, could be changed)
-* Complete the robot class
-  - Constructor should have parameters for the player and assign it to 
+* Complete the Robot class
   - act(Action a) should use the Action enum to perform an action on the robot - only do this if Action enum is finished
   it should check what type of action
   - destroy() should put the robot back at the starting location, which could be a variable
