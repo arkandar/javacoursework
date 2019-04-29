@@ -1,15 +1,17 @@
 # CS1410 Project
-
+# SPEC: https://vle.aston.ac.uk/bbcswebdav/pid-1506546-dt-content-rid-10007428_1/courses/2018_CS1410/cs1410spec19%284%29.pdf
 To complete the code first read through all the classes/UML to try and understand what each class is for
 All of the parts that say // TODO are parts that need to be completed
 Completed classes - Location, Direction
 We might still need to create new classes so if you think there needs to be one create it
 Whatever you work on add your name to the comments at the top
 Upload classes to https://drive.google.com/drive/folders/13Dja_yqe9oeNYAFglPW1xA3o04b4pr_X?usp=sharing
+Try and comment using javadoc style: https://vle.aston.ac.uk/bbcswebdav/pid-1477057-dt-content-rid-9612836_1/courses/2018_CS1410/2018_CS1410_ImportedContent_20190111041631/l7slides.pdf
 
 * Complete the Action enum - needs all of the different actions like forward/rotate, example on https://vle.aston.ac.uk/bbcswebdav/pid-1526778-dt-content-rid-9991493_1/courses/2018_CS1410/tutorial3-design.pdf
 (outline already done, could be changed)
 * Complete the Robot class
+  - add a Direction variable
   - act(Action a) should use the Action enum to perform an action on the robot - only do this if Action enum is finished
   it should check what type of action
   - destroy() should put the robot back at the starting location, which could be a variable
@@ -21,8 +23,12 @@ Upload classes to https://drive.google.com/drive/folders/13Dja_yqe9oeNYAFglPW1xA
   - add a method called addAction which has parameter of type Action, which adds the action to the ArrayList
   - (difficult) make a method to check if there two actions in a row in the array
  * Complete Flag class
-  - (difficult) notifyGame() should tell the game that one of the flags has been touched and by what player, maybe using player
-
+  - (difficult) notifyGame() should tell the game that one of the flags has been touched and by what player, maybe using player/robot/game as a parameter
+  - react should use the notifyGame() method and give the Robot in it as a parameter
+ * Complete Gear class
+  - react should rotate the robot using r.act(LEFT) or r.act(RIGHT) which could happen randomly (possibly using the Random class) 
+ * Complete Pit class
+  - react should destroy the robot using r.destroy()
 
 
 
