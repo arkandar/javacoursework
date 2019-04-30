@@ -8,8 +8,8 @@ Whatever you work on add your name to the comments at the top
 Upload classes to https://drive.google.com/drive/folders/13Dja_yqe9oeNYAFglPW1xA3o04b4pr_X?usp=sharing
 Try and comment using javadoc style: https://vle.aston.ac.uk/bbcswebdav/pid-1477057-dt-content-rid-9612836_1/courses/2018_CS1410/2018_CS1410_ImportedContent_20190111041631/l7slides.pdf
 
-* Complete the Action enum - needs all of the different actions like forward/rotate, example on https://vle.aston.ac.uk/bbcswebdav/pid-1526778-dt-content-rid-9991493_1/courses/2018_CS1410/tutorial3-design.pdf
-(outline already done, could be changed)
+* ~Complete the Action enum - needs all of the different actions like forward/rotate, example on https://vle.aston.ac.uk/bbcswebdav/pid-1526778-dt-content-rid-9991493_1/courses/2018_CS1410/tutorial3-design.pdf
+(outline already done, could be changed)~
 * Complete the Robot class
   - add a Direction variable
   - act(Action a) should use the Action enum to perform an action on the robot - only do this if Action enum is finished
